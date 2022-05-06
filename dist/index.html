@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <script defer src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Weather App</title>
+  </head>
+  <body>
+    <main>
+      <div class="user">
+        <div>
+          <p id="currentTime"></p>
+        </div>
+        <div class="userInput">
+          <label for="name">
+            <input
+              type="text"
+              name="name"
+              id="city"
+              placeholder="Search by city"
+            />
+          </label>
+          <label for="submit">
+            <button id="submit">
+              <img
+                src="https://img.icons8.com/external-dreamstale-lineal-dreamstale/32/000000/external-search-ui-dreamstale-lineal-dreamstale.png"
+                id="img"
+              />
+            </button>
+          </label>
+        </div>
+
+        <div id="canvas">
+          <h1 id="cityName"></h1>
+          <canvas id="myChart"></canvas>
+        </div>
+      </div>
+      <div id="weather"></div>
+      <script src="../src/time.js"></script>
+    </main>
+  </body>
+</html>
